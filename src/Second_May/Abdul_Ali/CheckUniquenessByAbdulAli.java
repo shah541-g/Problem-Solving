@@ -3,7 +3,7 @@ package Second_May.Abdul_Ali;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CheckUniqueness {
+public class CheckUniquenessByAbdulAli {
 
     public boolean isUniqueViaBooleanArray(String string){
 
@@ -103,7 +103,7 @@ public class CheckUniqueness {
     public static void runAllAbdulAliSolutions(){
 
         printAscii();
-        CheckUniqueness uniquenessChecker = new CheckUniqueness();
+        CheckUniquenessByAbdulAli uniquenessChecker = new CheckUniquenessByAbdulAli();
         System.out.println("Is Unique Via BruteForce: " + uniquenessChecker.isUniqueViaBruteForce("ahmad"));
         System.out.println("Is Unique Via BitWise Array (Just For AscII Values): " + uniquenessChecker.isUniqueViaBooleanArray("ahmad"));
         System.out.println("Is Unique Via Set/HashSet (For All Unicode Values): " + uniquenessChecker.isUniqueViaSet("ahmad"));
