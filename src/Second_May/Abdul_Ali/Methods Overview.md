@@ -3,7 +3,7 @@
 
 ## Implementation Details
 
-The `CheckUniqueness` class contains four different methods to check for unique characters:
+The `CheckUniquenessByAbdulAli` class contains four different methods to check for unique characters:
 
 1. `isUniqueViaBruteForce` - O(n²) time complexity
 2. `isUniqueViaBooleanArray` - O(n) time, O(1) space (ASCII only)
