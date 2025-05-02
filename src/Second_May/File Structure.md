@@ -9,15 +9,15 @@ This project provides multiple implementations to check if all characters in a g
 - [ASCII Art Generation](#ascii-art-generation)
 
 ## Package Structure
-src/
-├── Main.java # Entry point
-├── Second_May/
-│ ├── SecondMay.java # Main runner class
-│ ├── Abdul_Ali/
-│ │ └── CheckUniquenessByAbdulAli.java # Abdul Ali's implementation
-│ ├── Noshad/ # Noshad's implementations
-│ ├── Waseem/ # Waseem's implementations
-│ └── Ali_Haider/ # Ali Haider's implementations
+src/\
+├── Main.java # Entry point\
+├── Second_May/\
+│ ├── SecondMay.java # Main runner class\
+│ ├── Abdul_Ali/\
+│ │ └── CheckUniquenessByAbdulAli.java # Abdul Ali's implementation\
+│ ├── Noshad/ # Noshad's implementations\
+│ ├── Waseem/ # Waseem's implementations\
+│ └── Ali_Haider/ # Ali Haider's implementations\
 
 ## How to Run
 
