@@ -8,8 +8,14 @@ public class MoveSpacesByAbdulAli {
 
 
 
-    private static String moveSpaceToEndMethod1(){
+    private static String moveSpaceToEndMethod1(char[] string){
 
+        int index = 0;
+        for(int i=0; i<string.length;i++){
+            if(string[i]==' '){
+                
+            }
+        }
         
         return "";
     }
