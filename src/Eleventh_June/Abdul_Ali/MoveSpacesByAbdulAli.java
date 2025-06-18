@@ -56,13 +56,13 @@ public class MoveSpacesByAbdulAli {
     }
     public static void runAllAbdulAliSolutions(){
 
-
+        char[] string = {'T','a','c','t','c','o','a','p','a','p','a'};
         printAbdulAli();
         printAsciiArt();
         printSpaces();
         printQuestion();
         printSpaces();
-        moveSpaceToEndMethod1();
+        moveSpaceToEndMethod1(string);
         moveSpaceToEndMethod2();
         moveSpaceToEndMethod3();
 
