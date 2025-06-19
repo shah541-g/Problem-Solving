@@ -2,6 +2,9 @@ package Eighteenth_June.Abdul_Ali;
 
 import Constants_And_Methods.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import static Constants_And_Methods.Names.printAbdulAli;
 
 // Problem Number: 1.1
@@ -11,14 +14,72 @@ import static Constants_And_Methods.Names.printAbdulAli;
 
 public class IsUniqueByAbdulAli {
 
-    private static String method1() {
-        return "";
+    public static boolean isUniqueViaBooleanArray(String string){
+
+        boolean[] bitWiseArray = new boolean[128];
+        for (char c : string.toCharArray()){
+
+            if(bitWiseArray[(int) c]){
+                return false;
+            }
+            bitWiseArray[(int) c] = true;
+
+        }
+
+
+        return true;
     }
-    private static String method2() {
-        return "";
+
+    public static boolean isUniqueViaSet(String string){
+
+        Set<Character> seen = new HashSet<>();
+
+        for (char c : string.toCharArray()){
+
+            if(!seen.add(c)){
+                return false;
+            }
+        }
+
+        return true;
     }
-    private static String method3() {
-        return "";
+
+    private static char[] bubbleSort(String string){
+
+        char[] processedArray = string.toCharArray();
+
+        int length = processedArray.length;
+
+        for (int i=0; i<length-1; i++){
+
+            for(int j = 0; j<length-i-1; j++){
+                if(processedArray[j]>processedArray[j+1]){
+                    char temp = processedArray[j];
+                    processedArray[j] = processedArray[j+1];
+                    processedArray[j+1] = temp;
+                }
+            }
+        }
+
+        return processedArray;
+    }
+
+
+    public static boolean isUniqueViaSortedArray(String string){
+
+//        Step 1: Sort They Array
+        char[] sortedArray = bubbleSort(string);
+        int length = sortedArray.length;
+
+        for(int i = 0; i<length; i++){
+
+//        Step 2: Compare Adjecent Letters
+            if(sortedArray[i] == sortedArray[i+1]){
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private static void printAsciiArt() {
@@ -47,8 +108,10 @@ public class IsUniqueByAbdulAli {
         printSpaces();
         printQuestion();
         printSpaces();
-        method1();
-        method2();
-        method3();
+        System.out.println(isUniqueViaBooleanArray("Ahmad"));
+        System.out.println(isUniqueViaSet("Ahmad"));
+        System.out.println(isUniqueViaSortedArray("Ahmad"));
+
+
     }
 }
