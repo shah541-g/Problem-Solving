@@ -1,4 +1,4 @@
-from ...Constants_And_Methods.Names import *
+##from ...Constants_And_Methods.Names import *
 
 # Problem Number: 1.1
 # Problem Name: Is Unique
@@ -6,13 +6,26 @@ from ...Constants_And_Methods.Names import *
 # Link: https://www.geeksforgeeks.org/determine-string-unique-characters/
 
 def method1():
+    def is_unique(str):
+        for i in range(len(str)):
+         for j in range(i + 1, len(str)):
+            if str[i] == str[j]:
+                return False
+    return True
+
+user_input = input("Enter a string: ")
+
+if is_unique(user_input):
+    print("All characters are unique.")
+else:
+    print("Duplicate characters found.")
     return ""
 
-def method2():
-    return ""
+##def method2():
+  ##  return ""
 
-def method3():
-    return ""
+##def method3():
+  ##  return ""
 
 def print_ascii_art():
     print("""    ____        __  __      _                
