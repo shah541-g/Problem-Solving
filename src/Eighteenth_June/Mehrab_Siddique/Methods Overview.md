@@ -1,6 +1,8 @@
 # Is Unique – By Mehrab Siddique
 
-# Date: 2025-06-19
+## Date
+
+### 2025-06-19
 
 ## Problem Statement
 
@@ -8,11 +10,11 @@
 **Difficulty**: Easy  
 **Source**: [GeeksforGeeks - Determine if a String Has All Unique Characters](https://www.geeksforgeeks.org/determine-string-unique-characters/)
 
-### Description:
+### Description
 
 Implement an algorithm to determine if a string has all unique characters.  
-**Constraints**: 
- 
+**Constraints**
+
 - You **cannot use additional data structures** in this version.
 - Focus is on understanding character comparison logic and control flow.
 
@@ -32,13 +34,13 @@ The `IsUniqueByMehrab` class (or function-based implementation) contains one met
 
 ---
 
-### 📘 Description:
+### 📘 Description
 
 This method compares each character with every other character that comes after it in the string. If any two characters match, it returns `false`. If the loop completes with no duplicates found, it returns `true`.
 
 ---
 
-### ✅ Advantage: 
+### ✅ Advantage
 
 - No additional data structures used.
 - Simple logic using only `if` and `for`.
@@ -46,7 +48,7 @@ This method compares each character with every other character that comes after 
 
 ---
 
-### ❌ Limitation:
+### ❌ Limitation
 
 - Inefficient for longer strings due to quadratic time complexity.
 - Doesn’t scale well for performance-sensitive applications.
