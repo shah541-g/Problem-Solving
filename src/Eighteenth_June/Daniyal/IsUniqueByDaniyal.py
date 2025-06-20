@@ -1,4 +1,4 @@
-from ...Constants_And_Methods.Names import *
+ from ...Constants_And_Methods.Names import *
 
 # Problem Number: 1.1
 # Problem Name: Is Unique
