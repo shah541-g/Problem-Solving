@@ -1,4 +1,4 @@
-from ...Constants_And_Methods.Names import *
+#from ...Constants_And_Methods.Names import *
 
 # Problem Number: 1.2
 # Problem Name: Check Permutation
@@ -6,6 +6,20 @@ from ...Constants_And_Methods.Names import *
 # Link: https://www.geeksforgeeks.org/check-if-two-strings-are-permutation-of-each-other/
 
 def method1():
+    class Solution:
+        def areAnagrams(self, s1, s2):
+         if len(s1) != len(s2):
+            return False
+        return sorted(s1) == sorted(s2)
+
+s1 = "silent"
+s2 = "listen"
+sol = Solution()
+
+if sol.areAnagrams(s1, s2):
+    print("They are anagrams.")
+else:
+    print("They are not anagrams.")
     return ""
 
 def method2():
