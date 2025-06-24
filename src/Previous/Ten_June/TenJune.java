@@ -1,7 +1,7 @@
-package Ten_June;
+package Previous.Ten_June;
 
 
-import Ten_June.Abdul_Ali.PalindromePermutationCheckerByAbdulAli;
+import Previous.Ten_June.Abdul_Ali.PalindromePermutationCheckerByAbdulAli;
 
 public class TenJune {
 

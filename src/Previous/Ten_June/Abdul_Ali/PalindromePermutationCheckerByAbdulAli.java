@@ -1,4 +1,4 @@
-package Ten_June.Abdul_Ali;
+package Previous.Ten_June.Abdul_Ali;
 
 public class PalindromePermutationCheckerByAbdulAli {
 
